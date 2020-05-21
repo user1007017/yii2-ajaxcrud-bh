@@ -1,0 +1,34 @@
+{
+    "name": "user1007017/yii2-ajaxcrud-bh",
+    "description": "Gii CRUD template for Single Page Ajax Administration for yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","ajax","crud","gii","template","database"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Muppet",
+            "email": "bla@gmail.com",
+            "homepage": "https://github.com/user1007017?tab=repositories"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/user1007017/yii2-ajaxcrud-bh/issues?state=open",
+        "source": "https://github.com/user1007017/yii2-ajaxcrud-bh"
+    },
+    "require": {
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-bootstrap": "*",
+	    "kartik-v/yii2-grid": "^3.0.4",
+        "kartik-v/yii2-mpdf": "^1.0.0",
+        "kartik-v/yii2-editable": "^1.7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "user1007017\\ajaxcrud\\": "src/"
+        }
+    },
+    "extra": {
+        "bootstrap": "user1007017\\ajaxcrud\\Bootstrap"
+    }
+}
