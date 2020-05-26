@@ -16,10 +16,15 @@ $(document).ready(function () {
     }
     // Catch click event on all buttons that want to open a modal
     $(document).on('click', '[role="modal-remote"]', function (event) {
+        var selectedIds = [];
         event.preventDefault();
         var Output;
         var RowID = $("#grid1").yiiGridView("getSelectedRows");
-        var Mode = 'UpdateMultiple';
+        if(selectedIds.length == 0){
+            var Mode = 'Create';
+        }else{
+            var Mode = 'UpdateMultiple';
+        }
         Output = JSON.stringify(RowID);
         console.log(RowID);
         // modal.find('#buchungen-bu_datensaetze').val(Output);
