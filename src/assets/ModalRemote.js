@@ -320,8 +320,8 @@ function ModalRemote(modalId) {
 	                // Test if browser supports FormData which handles uploads
 	                if (window.FormData) {
 	                    data = new FormData($('#ModalRemoteConfirmForm')[0]);
-	                    if (typeof selectedIds !== 'undefined' && selectedIds)
-	                        data.append('pks', selectedIds.join());
+	                 //   if (typeof selectedIds !== 'undefined' && selectedIds)
+	                   //     data.append('pks', selectedIds.join());
 	                } else {
 	                    // Fallback to serialize
 	                    data = $('#ModalRemoteConfirmForm');
